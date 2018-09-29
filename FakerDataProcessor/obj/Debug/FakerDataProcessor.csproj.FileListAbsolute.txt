@@ -1,0 +1,12 @@
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\FakerDataProcessor.exe.config
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\FakerDataProcessor.exe
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\FakerDataProcessor.pdb
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\Newtonsoft.Json.dll
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\Newtonsoft.Json.xml
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcessor.csprojAssemblyReference.cache
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcessor.csproj.CoreCompileInputs.cache
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcessor.csproj.CopyComplete
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcessor.exe
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcessor.pdb
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\Dapper.dll
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\Dapper.xml
