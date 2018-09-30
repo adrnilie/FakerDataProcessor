@@ -10,3 +10,7 @@ F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcess
 F:\Repositories\FakerDataProcessor\FakerDataProcessor\obj\Debug\FakerDataProcessor.pdb
 F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\Dapper.dll
 F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\Dapper.xml
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\EntityFramework.dll
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\EntityFramework.SqlServer.dll
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\EntityFramework.xml
+F:\Repositories\FakerDataProcessor\FakerDataProcessor\bin\Debug\EntityFramework.SqlServer.xml
