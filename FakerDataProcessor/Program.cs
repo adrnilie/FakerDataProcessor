@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Dapper;
-using FakerDataProcessor.Models;
+using FakerDataProcessor.Core;
 using Newtonsoft.Json;
 
 namespace FakerDataProcessor
@@ -33,31 +30,23 @@ namespace FakerDataProcessor
                 using (var content = response.Content)
                 {
                     var responseBody = await response.Content.ReadAsStringAsync();
-                    var data = JsonConvert.DeserializeObject<List<Users>>(responseBody);
+                    var data = JsonConvert.DeserializeObject<List<User>>(responseBody);
 
                     Console.WriteLine("Adding Users to Database");
                     InsertDataIntoDb(data);
+                    Console.WriteLine("Done. Press any key to exit.");
                 }
             }
         }
 
-        public static void InsertDataIntoDb(List<Users> usersToInsert)
+        public static void InsertDataIntoDb(List<User> usersToInsert)
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["DotNetWebApiDb"].ConnectionString;
-
-            using (var db = new SqlConnection(connectionString))
+            using (var context = new WebApiDbEntities())
             {
-                foreach (var userToInsert in usersToInsert)
+                foreach (var user in usersToInsert)
                 {
-                    var param = new DynamicParameters();
-                    param.Add("firstName", userToInsert.FirstName);
-                    param.Add("lastName", userToInsert.LastName);
-                    param.Add("email", userToInsert.Email);
-                    param.Add("username", userToInsert.Username);
-                    param.Add("password", userToInsert.Password);
-
-                    db.Execute(@"INSERT INTO [Users](FirstName, LastName, Email, Username, Password)
-                                        VALUES(@firstName, @lastName, @email, @username, @password)", param, null, null, CommandType.Text);
+                    context.Users.Add(user);
+                    context.SaveChanges();
                 }
             }
         }
